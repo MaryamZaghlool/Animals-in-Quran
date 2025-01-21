@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    perspective: 700px;
+}
+
+.cards {
+    background: -webkit-linear-gradient(left, rgb(27, 128, 66), #78B3CE);
+}
+
+.headline h1 {
+    text-align: center;
+    padding-top: 70px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.headline .line {
+    width: 170px;
+    height: 4px;
+    background-color: black;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.card>div,
+.cards .front,
+.cards .back {
+    width: 300px;
+    height: 350px;
+}
+
+.cards .front,
+.cards .back {
+    position: absolute;
+}
+
+.cards .back {
+    text-align: center;
+    padding: 25px 20px;
+    color: white;
+    background-color: #2A3335;
+    transform: rotateY(180deg);
+    font-size: 18px;
+    overflow: auto;
+}
+
+.cards .back p {
+    line-height: 30px;
+    word-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.cards .front {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.cards .card1 .front {
+    background-image: url(https://i.pinimg.com/236x/85/bb/d1/85bbd1695a083027690da12a7ece59af.jpg);
+}
+
+.cards .card1 .back,
+.cards .card7 .back {
+    padding-top: 120px;
+}
+
+.cards .card2 .front {
+    background-image: url(https://i.pinimg.com/736x/1a/33/6f/1a336f79b7be468665784e4f4ed8a97c.jpg);
+}
+
+.cards .card3 .front {
+    background-image: url(https://i.pinimg.com/736x/1f/6e/e6/1f6ee6c95fae506a0d585ca81ab9ec58.jpg);
+}
+
+.cards .card4 .front {
+    background-image: url(https://i.pinimg.com/736x/0b/ff/24/0bff240c1f58a46db107fc1b605cfa0b.jpg);
+}
+
+.cards .card3 .back,
+.cards .card4 .back,
+.cards .card8 .back {
+    padding-top: 50px;
+}
+
+.cards .card5 .front {
+    background-image: url(https://i.pinimg.com/736x/cb/43/27/cb4327355391d3f106d2f4f9511986d2.jpg);
+}
+
+.cards .card6 .front {
+    background-image: url(https://i.pinimg.com/736x/68/a3/c0/68a3c0edb6ac04eadff14b31333ee34f.jpg);
+}
+
+.cards .card6 .back {
+    padding-top: 90px;
+}
+
+.cards .card7 .front {
+    background-image: url(https://i.pinimg.com/236x/71/3c/ee/713cee828c6948955922be6023959397.jpg);
+}
+
+.cards .card8 .front {
+    background-image: url(https://i.pinimg.com/236x/19/43/d8/1943d82803dac315a81e0ef4d913926f.jpg);
+}
+
+.cards .card9 .front {
+    background-image: url(https://th.bing.com/th/id/OIP.OunD8OpIf5NV8YPc4cw8PAHaHa?rs=1&pid=ImgDetMain);
+}
+
+.cards .card10 .front {
+    background-image: url(https://th.bing.com/th/id/OIP.K06RVx8tyXUECWl3xht8TgHaE_?w=1000&h=675&rs=1&pid=ImgDetMain);
+}
+
+.cards .card11 .front {
+    background-image: url(https://i.pinimg.com/236x/6c/ee/8d/6cee8d21126bb1b1501faa1f99618709.jpg);
+}
+
+.cards .card12 .front {
+    background-image: url(https://i.pinimg.com/736x/3c/3e/40/3c3e400a97bcc0dc83e2246dd9ef585e.jpg);
+}
+
+.cards .card {
+    overflow: hidden;
+    width: fit-content;
+    margin: auto;
+}
+
+.card>div {
+    position: relative;
+    transition: all 2s;
+    transform-style: preserve-3d;
+    float: left;
+    margin-left: 70px;
+    margin-bottom: 50px;
+}
+
+.container .card>div:hover {
+    transform: rotateY(180deg);
+}
